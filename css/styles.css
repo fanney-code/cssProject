@@ -1,0 +1,131 @@
+.offpage{
+    position : absolute;
+    left:-1000px;
+}
+body {
+    font-family: serif;
+    font-size: 18px;
+    background-color: #f0e5d94f;
+}
+header{
+    background-color: beige;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav {
+    background-color: #eeb7b7;
+    display: inline-block;
+    width: 1500px;
+}
+ul {
+    list-style-type: none;
+    display: ruby-text;
+    text-decoration: none;
+    font-family: serif;
+}
+li{
+    display: inline;
+}
+h1 {
+    text-align: center;
+    font-family: ui-sans-serif;
+    font-size: 40px;
+    color: black;
+}
+p{
+    line-height:25px;
+}
+/* header img{
+    width:10%;
+    position: relative;
+    top:20px;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+
+.menu-item {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:nth-child(2n) {
+    background-color: #eeb7b7; 
+}
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.images img {
+    flex: 1 1 200px;
+    max-width: 200px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.images img {
+    flex: 1 1 200px;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+.skip-link:focus {
+    position: static;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+    z-index: 1000;
+}
